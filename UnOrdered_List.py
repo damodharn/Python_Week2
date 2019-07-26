@@ -76,4 +76,4 @@ if __name__ == "__main__":
         for i in array1:
             fo.write(i+" ")  # writing each word int the file.
         fo.close()
-main()
+    main()

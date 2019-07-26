@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e412051-2c11-42d6-a566-6c94dba65fab" name="Default Changelist" comment="" />
+    <list default="true" id="1e412051-2c11-42d6-a566-6c94dba65fab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkedList.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderedNo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrederedList.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnOrdered_List.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnOrdered_List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unordered.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Unordered.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,14 +24,13 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="77" />
-    <option name="y" value="27" />
-    <option name="width" value="1259" />
-    <option name="height" value="676" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1OVDev9QlDWBA3K9biV7QSXXvlb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BridgeLabz/Data_Structure_Programs/UnOrdered_List.py" />
   </component>
   <component name="RunDashboard">
@@ -37,7 +45,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.UnOrdered_List">
+  <component name="RunManager" selected="Python.LinkedList">
+    <configuration name="LinkedList" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="week2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LinkedList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="OrederedList" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="week2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OrederedList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnOrdered_List" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="week2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,6 +153,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.LinkedList" />
+        <item itemvalue="Python.OrederedList" />
         <item itemvalue="Python.UnOrdered_List" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test2" />
@@ -121,5 +173,32 @@
       <updated>1563882602625</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
