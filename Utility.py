@@ -1,7 +1,15 @@
+# *********************************************************************************************
+# Purpose: To create an Utility class for Data Structure Programs
+# Author:  Damodhar D. Nirgude.
+# ************************************************************************************************
+
+
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
+
+#  *********************************  ORDERED LIST  *********************************************
 
 
 class LinkList2:
@@ -58,7 +66,7 @@ class LinkList2:
                 temp = temp.next
             if temp is None:
                 temp = Node(no)
-                temp.next = None
+                prev.next = temp
             elif temp.data > no:  # If No not found till last or if we got No greater than i/p no
                 #  Inserting the New Node at that place
                 prev.next = Node(no)

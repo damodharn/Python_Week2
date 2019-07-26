@@ -1,7 +1,7 @@
 # *********************************************************************************************
-# Purpose: To write a program to create Unordered Linked list of words to add/delete user's word into/from file.
+# Purpose: To write a program to create Ordered Linked list of Numbers to add/delete user's No. into/from file.
 # Author:  Damodhar D. Nirgude.
-# *************************************************************************************************
+# *********************************************************************************************
 from Utility import LinkList2
 
 
