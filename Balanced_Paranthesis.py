@@ -14,16 +14,13 @@ def main():
     for i in exp:
         if i == '(':
             ll.push(i)
-            # print("'(' is Pushed into the stack")
             psh += 1
         elif i == ')':
             if ll.is_empty() is True:
                 flag = False
-                # print("Can't Pop...List is empty")
                 break
             else:
                 j = ll.pop()
-                # print(j, "is Popped from the stack")
                 pp += 1
     if flag is True and psh == pp:
         print("Balanced Eqn")

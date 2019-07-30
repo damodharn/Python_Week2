@@ -8,10 +8,8 @@ from Utility import LinkedList
 def main():
     fo = open("Unordered.txt", "r")  # Opening txt file in Read mode to read it's data.
     arr = fo.read()  # reading files data into arr as a string.
-    print("Array: ", arr)
     words = arr.split(" ")  # splitting string of words and then adding each word into list words
     fo.close()
-    print("Words", words, "\n")
     ll = LinkedList()  # Creating object ll of LinkedList
     for i in words:
         ll.insert(i)  # inserting each word into the list.

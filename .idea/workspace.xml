@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e412051-2c11-42d6-a566-6c94dba65fab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Banking_Queue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Palindrome_check.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calander_2D.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HashText.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hash_Search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prime_2D.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python_Work/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Balanced_Paranthesis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Balanced_Paranthesis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Balanced_Paranthesis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UnOrdered_List.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnOrdered_List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unordered.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Unordered.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utility.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +34,8 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BridgeLabz/Data_Structure_Programs/Simulate_Banking_Cash_Counter.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Calander_2D.py" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -43,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Banking_Queue">
+  <component name="RunManager" selected="Python.UnOrdered_List">
     <configuration name="Balanced_Paranthesis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="week2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -65,7 +71,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Banking_Queue" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Hash_Search" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="week2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -77,7 +83,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Banking_Queue.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Hash_Search.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,7 +92,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="OrederedList" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Prime_2D" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="week2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,7 +104,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OrederedList.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prime_2D.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,7 +113,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Palindrome_check" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TEST" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="week2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,7 +125,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Palindrome_check.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TEST.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Banking_Queue" />
-        <item itemvalue="Python.Palindrome_check" />
-        <item itemvalue="Python.Balanced_Paranthesis" />
-        <item itemvalue="Python.OrederedList" />
         <item itemvalue="Python.UnOrdered_List" />
+        <item itemvalue="Python.Hash_Search" />
+        <item itemvalue="Python.Balanced_Paranthesis" />
+        <item itemvalue="Python.Prime_2D" />
+        <item itemvalue="Python.TEST" />
       </list>
     </recent_temporary>
   </component>

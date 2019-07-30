@@ -67,10 +67,11 @@ class LinkList2:
             if temp is None:
                 temp = Node(no)
                 prev.next = temp
-            elif temp.data > no:  # If No not found till last or if we got No greater than i/p no
+            elif temp.data > no:  # If Number not found till last or if we got No greater than i/p no
                 #  Inserting the New Node at that place
                 prev.next = Node(no)
                 prev.next.next = temp
+
 
 
 #  **************************************  UNORDERED LINK LIST  ***************************************
@@ -115,11 +116,11 @@ class LinkedList:
                     prev.next = temp.next  # assign previous nodes next to current node next
                 # i,e deleting current temp node.
                     return
-                else:
-                    prev = temp
-                    temp = temp.next
+                prev = temp
+                temp = temp.next
             if temp is None:
-                self.insert(dt)
+                temp = Node(dt)
+                prev.next = temp
 
     def pop(self):
         var = []
@@ -205,3 +206,87 @@ class Queue:
             else:
                 self.rear = Node()
 
+# **********************************  Calendar  *****************************************
+
+
+class Calendar:
+    #  **********************  Method returns day value i,e 1st day of the month  *****************
+    def days(self, d, m, y):
+        y0 = y - (14 - m) // 12
+        x = y0 + y0 // 4 - y0 // 100 + y0 // 400
+        m0 = m + 12 * ((14 - m) // 12) - 2
+        d0 = (d + x + 31 * m0 // 12) % 7
+        return d0
+
+    def leap_year(self, yr):
+        if yr % 100 == 0:  # Checking Conditions for leap year
+            if yr % 400 == 0:  # and returning 1 if Leap year is found and 0 if not found.
+                return True
+            else:
+                return False
+        elif yr % 4 == 0:
+            return True
+        else:
+            return False
+
+#  *********************************  Hashing Search  *************************************
+
+
+class Hash:
+    def __init__(self):
+        self.head = None
+
+    #  ***********************************  Method to Insert Element at Ordered place  ****************
+
+    def insert(self, data):
+        new = Node(data)   # Assigning newly created node to new
+        if self.head is None:
+            self.head = new
+        elif self.head.data > new.data:
+            new.next = self.head
+            self.head = new
+        else:
+            prev = None
+            temp = self.head
+            while temp is not None:
+                if temp.data > new.data:
+                    new.next = temp
+                    prev.next = new
+                    break
+                prev = temp
+                temp = temp.next
+            # prev.next = new
+    #  *************************************  Method to search element in List  **************************
+    def search(self, data):
+        temp = self.head
+        while temp is not None:
+            if temp.data == data:
+                return True
+            temp = temp.next
+        return False
+
+    #  *******************************  Method to delete Element from the List  ****************
+
+    def delete(self, data):
+        if self.head.data == data:
+            self.head = self.head.next
+        else:
+            temp = self.head
+            prev = None
+            while temp is not None:
+                if temp.data == data:
+                    prev.next = temp.next
+                prev = temp
+                temp = temp.next
+
+    #  *******************************  Method to display List elements  *****************************
+
+    def display(self):
+        if self.head is None:
+            print("List is Empty")
+        else:
+            temp = self.head
+            while temp is not None:
+                print(temp.data, end=" ")
+                temp = temp.next
+    
