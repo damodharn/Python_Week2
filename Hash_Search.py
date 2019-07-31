@@ -10,32 +10,34 @@ class Node:
         self.data = data
         self.next = None
 
+#  *********************************  Hashing Search  *************************************
+
 
 class Hash:
     def __init__(self):
         self.head = None
 
+    #  ***********************************  Method to Insert Element at Ordered place  ****************
+
     def insert(self, data):
-        new = Node(data)
+        new = Node(data)   # Assigning newly created node to new
         if self.head is None:
-            self.head = new  # If list is empty assigning head with new
-        elif self.head.data > new.data:  # If 1st element is bigger than new element
-            new.next = self.head  # Link head with new
-            self.head = new  # update head with new.
-        else:  # Else traverse in the list till proper place and insert element there.
+            self.head = new
+        elif self.head.data > new.data:
+            new.next = self.head
+            self.head = new
+        else:
             prev = None
             temp = self.head
             while temp is not None:
-                if new.data > temp.data:  # if new node data is greater than temp data
-                    new.next = temp  # insert new node before temp
+                if temp.data > new.data:
+                    new.next = temp
                     prev.next = new
                     break
                 prev = temp
                 temp = temp.next
-            if temp is None:
-                prev.next = new
-    #  *******************************  Search Element in List and
-    #  return True if found anf False if not Found  *************************************
+            # prev.next = new
+    #  *************************************  Method to search element in List  **************************
 
     def search(self, data):
         temp = self.head
@@ -44,7 +46,8 @@ class Hash:
                 return True
             temp = temp.next
         return False
-    #  ********************  Method to delete node if data found in the List  ******************
+
+    #  *******************************  Method to delete Element from the List  ****************
 
     def delete(self, data):
         if self.head.data == data:
@@ -57,7 +60,8 @@ class Hash:
                     prev.next = temp.next
                 prev = temp
                 temp = temp.next
-    #  **************************************  Method display List elements  ********************
+
+    #  *******************************  Method to display List elements  *****************************
 
     def display(self):
         if self.head is None:
@@ -67,7 +71,6 @@ class Hash:
             while temp is not None:
                 print(temp.data, end=" ")
                 temp = temp.next
-
 
 def main():
     fo = open("HashText.txt", "r")

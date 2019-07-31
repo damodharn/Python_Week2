@@ -2,7 +2,75 @@
 # Purpose: To write a program to create Ordered Linked list of Numbers to add/delete user's No. into/from file.
 # Author:  Damodhar D. Nirgude.
 # *********************************************************************************************
-from Utility import LinkList2
+
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+#  *********************************  ORDERED LIST  *********************************************
+
+
+class LinkList2:
+    def __init__(self):
+        self.head = None
+
+    def insert_at(self, data):
+        if self.head is None:
+            self.head = Node(data)
+        else:
+            if self.head.data > data:
+                temp = Node(data)
+                temp.next = self.head
+                self.head = temp
+            else:
+                prev = None
+                temp = self.head
+                while temp is not None:
+                    if temp.data > data:
+                        prev.next = Node(data)
+                        prev.next.next = temp
+                        break
+                    prev = temp
+                    temp = temp.next
+                if temp is None:
+                    temp = Node(data)
+                    prev.next = temp
+
+    def print_list(self):
+        temp = self.head  # assigning head to temporary variable temp
+        while temp is not None:  # traversing through list till it ends.
+            print(temp.data, end=' ')
+            temp = temp.next
+
+    def pop(self):
+        var = []
+        while self.head is not None:
+            var.append(self.head.data)
+            self.head = self.head.next
+        return var
+
+    def search(self, no):
+        if self.head.data == no:  # If No. found in head
+            self.head = self.head.next  # Updating head with Next Node.
+        else:
+            temp = self.head
+            prev = None
+            while temp is not None and temp.data <= no:  # Traversing through List till last or upto the no
+                # greater then User i/p no.
+                if temp.data == no:  # if no found in any Node
+                    prev.next = temp.next  # Bypassing that node i,e Deleting that Node.
+                    break
+                prev = temp
+                temp = temp.next
+            if temp is None:
+                temp = Node(no)
+                prev.next = temp
+            elif temp.data > no:  # If Number not found till last or if we got No greater than i/p no
+                #  Inserting the New Node at that place
+                prev.next = Node(no)
+                prev.next.next = temp
 
 
 def main():

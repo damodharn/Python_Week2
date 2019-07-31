@@ -129,3 +129,18 @@ if __name__ == '__main__':
         prime_Numbers(start)
     else:
         print("Range should be 1000")
+# ##########################################################################################################################
+
+    for i in range(5):
+        for j in range(7):
+            if array[i][j] != 0:
+                z = array[i][j]
+                if z//10 == 0:
+                    print(z, end="  ")
+                else:
+                    print(z, end=" ")
+            else:
+                print(end="  ")
+        print()
+    # *******************************************
+

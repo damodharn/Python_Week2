@@ -1,4 +1,8 @@
-import numpy
+# *********************************************************************************************
+# Purpose: To write a program to Find prime nos upto range 1000 and storing them in 2D array in proper range.
+# Author:  Damodhar D. Nirgude.
+# *********************************************************************************************
+
 
 class Prime:
 
@@ -11,37 +15,26 @@ class Prime:
                     prime = 0
                     break
             if prime == 1:
-                arr.append(x)
+                arr.append(x)  # Storing prime no into array arr
         return arr
 
 
 def main():
     ll = Prime()
     arr = ll.primeno()
-    array = numpy.zeros((10, 168), dtype=int)
-    for j in range(len(arr)):
-        if arr[j] <= 100:
-            array[0][j] = arr[j]
-        elif (arr[j] > 100) and (arr[j] <= 200):
-            array[1][j] = arr[j]
-        elif (arr[j] > 200) and (arr[j] <= 300):
-            array[2][j] = arr[j]
-        elif (arr[j] > 300) and (arr[j] <= 400):
-            array[3][j] = arr[j]
-        elif (arr[j] > 400) and (arr[j] <= 500):
-            array[4][j] = arr[j]
-        elif (arr[j] > 500) and (arr[j] <= 600):
-            array[5][j] = arr[j]
-        elif (arr[j] > 600) and (arr[j] <= 700):
-            array[6][j] = arr[j]
-        elif (arr[j] > 700) and (arr[j] <= 800):
-            array[7][j] = arr[j]
-        elif (arr[j] > 800) and (arr[j] <= 900):
-            array[8][j] = arr[j]
-        else:
-            array[9][j] = arr[j]
-    print(arr)
+    array = [list() for i in range(10)]  # Created 2D array of 10 rows; each row for each range like 0 to 100 and so on
+    for i in range(0, 10):
+        c = 0
+        for j in range(i*100, (i+1)*100):
+            if j in arr:
+                array[i].append(j)  # Added each No in it's appropriate range.
+                c += 1
     #  ***********************************  Printing Array elements  ***********************************
+    print("\nRange     |  <----------------------- List ------------------------>")
+    print("____________________________________________________________________________________________________")
+    for i in range(10):
+        print(i*100, "to", (i+1)*100, "| ", array[i])
+        print("________________________________________________________________________________________________")
 
 
 if __name__ == '__main__':
