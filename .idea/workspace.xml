@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e412051-2c11-42d6-a566-6c94dba65fab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Anagram_Queue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Anagram_Stack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Prime_Anagram.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Balanced_Paranthesis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Balanced_Paranthesis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calander_2D.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calander_2D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HashText.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HashText.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hash_Search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hash_Search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HashiText.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrederedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/OrederedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Palindrome_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/Palindrome_check.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prime_2D.py" beforeDir="false" afterPath="$PROJECT_DIR$/Prime_2D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnOrdered_List.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnOrdered_List.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unordered.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Unordered.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utility.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEST.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Calander_2D">
+  <component name="RunManager" selected="Python.Hash_Search">
     <configuration name="Anagram_Queue" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="week2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,7 +107,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Prime_2D" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Hash_Search" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="week2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,7 +119,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prime_2D.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Hash_Search.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Hash_Search" />
         <item itemvalue="Python.Calander_2D" />
         <item itemvalue="Python.Anagram_Queue" />
         <item itemvalue="Python.Anagram_Stack" />
         <item itemvalue="Python.Prime_Anagram" />
-        <item itemvalue="Python.Prime_2D" />
       </list>
     </recent_temporary>
   </component>

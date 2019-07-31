@@ -23,20 +23,21 @@ class Hash:
         new = Node(data)   # Assigning newly created node to new
         if self.head is None:
             self.head = new
-        elif self.head.data > new.data:
+        elif new.data > self.head.data:
             new.next = self.head
             self.head = new
         else:
             prev = None
             temp = self.head
             while temp is not None:
-                if temp.data > new.data:
+                if new.data > temp.data:
                     new.next = temp
                     prev.next = new
                     break
                 prev = temp
                 temp = temp.next
-            # prev.next = new
+            if temp is None:
+                prev.next = new
     #  *************************************  Method to search element in List  **************************
 
     def search(self, data):
@@ -65,12 +66,13 @@ class Hash:
 
     def display(self):
         if self.head is None:
-            print("List is Empty")
+            pass
         else:
             temp = self.head
             while temp is not None:
                 print(temp.data, end=" ")
                 temp = temp.next
+
 
 def main():
     fo = open("HashText.txt", "r")
@@ -80,15 +82,22 @@ def main():
     fo.close()
     print(words)
     lent = len(words)
-    ll_arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    ll = Hash()
-    for i in range(len(ll_arr)):
-        ll = Hash()
-        ll_arr.append(len(ll_arr))
-    for i in range(lent + 1):
-        ll_arr[words[i] % 11].insert((words[i]))
-    for i in range(len(ll_arr)):
-        print(ll_arr[i].display())
+    slot = []
+    for i in range(lent):
+        hs = Hash()
+        slot.append(hs)
+    for i in range(lent):
+        slot[int(words[i]) % 10].insert(int(words[i]))
+    for i in range(lent):
+        print(i + 1, "}", end=" ")  # for i in slot:
+        print(slot[i].display())        # print(i.display())
+    no = int(input("Enter a No. to be Searched in List"))
+    for i in range(lent):
+        if slot[i].search(no) is True:
+            break
+    
+    for i in range(lent):
+        print(slot[i].display())
 
 
 if __name__ == "__main__":
