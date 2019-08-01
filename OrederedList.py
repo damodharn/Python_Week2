@@ -16,26 +16,28 @@ class LinkList2:
     def __init__(self):
         self.head = None
 
+    # Method to insert a Node at Particular place in the List.
+
     def insert_at(self, data):
-        if self.head is None:
-            self.head = Node(data)
+        if self.head is None:  # If List is found to be Empty
+            self.head = Node(data)  # then create a new node and assign head to it.
         else:
-            if self.head.data > data:
-                temp = Node(data)
+            if self.head.data > data:  # If data is found to be greater than head i,e 1st node data
+                temp = Node(data)  # then insert new node before 1st node i,e head node and update head to new node.
                 temp.next = self.head
                 self.head = temp
             else:
                 prev = None
                 temp = self.head
-                while temp is not None:
-                    if temp.data > data:
-                        prev.next = Node(data)
+                while temp is not None:  # Traverse in the list either till last or
+                    if temp.data > data:  # till we get current node data greater than new data
+                        prev.next = Node(data)  # and insert new node before current node.
                         prev.next.next = temp
                         break
                     prev = temp
                     temp = temp.next
-                if temp is None:
-                    temp = Node(data)
+                if temp is None:  # If new data is largest no
+                    temp = Node(data)  # then add it at the last of the list.
                     prev.next = temp
 
     def print_list(self):
@@ -43,6 +45,8 @@ class LinkList2:
         while temp is not None:  # traversing through list till it ends.
             print(temp.data, end=' ')
             temp = temp.next
+
+    # Method to fetch 1st node data from the list.
 
     def pop(self):
         var = []

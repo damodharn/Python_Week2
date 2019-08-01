@@ -6,6 +6,7 @@
 
 
 class Node:
+
     def __init__(self, data):
         self.data = data
         self.next = None
@@ -131,7 +132,7 @@ def main():
         if slot[i] is not None:
             size = slot[i].slot_size()
             for j in range(size):
-                fo.write(str(slot[i].pop_head())+' ')
+                fo.write(str(slot[i].pop_head())+' ')  # Write each No from the List into file.
         else:
             pass
     fo.close()
