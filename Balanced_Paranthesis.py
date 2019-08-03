@@ -1,7 +1,9 @@
 # *********************************************************************************************
 # Purpose: To write a program to check if Expression is balanced or not using stack.
-# Author:  Damodhar D. Nirgude.
+# Author: Damodhar D. Nirgude.
 # *********************************************************************************************
+
+#  Class Node : Each node object contain each data element in Stack.
 
 
 class Node:
@@ -59,28 +61,6 @@ class Stack:
 #  *****************************  Queue for Banking  *************************************
 
 
-class Queue:
-    def __init__(self, lent):
-        self.lent = lent
-        self.front = None
-        self.rear = None
-        self.balance = 1000
-        self.size = 0
-
-    def enqueue(self, amt):
-        if self.lent == self.size:
-            print("Queue is Full.")
-        else:
-            if self.front is None:
-                self.front = Node(amt)
-                self.rear = self.front
-                self.size += 1
-                self.balance = self.balance + amt
-                print("amount Deposited.")
-            else:
-                self.rear = Node()
-
-
 def main():
     psh = 0
     pp = 0
@@ -88,7 +68,7 @@ def main():
     flag = True
     ll = Stack()
     for i in exp:
-        if i == '(':
+        if i == '(':  # If open parenthesis found in expression then push it to stack.
             ll.push(i)
             psh += 1
         elif i == ')':
@@ -96,10 +76,10 @@ def main():
                 flag = False
                 break
             else:
-                j = ll.pop()
+                j = ll.pop()  # If closed parenthesis found in expression then pop the stack.
                 pp += 1
-    if flag is True and psh == pp:
-        print("Balanced Eqn")
+    if flag is True and psh == pp:  # If push and pop count found to be equal then
+        print("Balanced Eqn")  # eqn is Balanced else eqn is Unbalanced.
     else:
         print("Unbalanced Eqn")
 
