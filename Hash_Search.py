@@ -2,7 +2,6 @@
 # Purpose: To write a program to create Queue for Banking.
 # Author:  Damodhar D. Nirgude.
 # *********************************************************************************************
-# from Utility import Hash
 
 
 class Node:
@@ -97,45 +96,55 @@ class Hash:
 
 
 def main():
-    fo = open("HashText.txt", "r")
-    arr = fo.read()
-    print(arr)
-    words = arr.split(' ')
-    fo.close()
-    print(words)
-    slot = []
-    for i in range(11):  # Fill each slot with object of class Hash
-        hs = Hash()
-        slot.append(hs)
-    for i in range(len(words)):
-        slot[int(words[i]) % 11].insert(int(words[i]))  # Inserting each No. at proper slot with proper index.
-
-    for i in range(len(slot)):  # Loop to display list from each slot.
-        print(i + 1, "}", end=" ")
-        print(slot[i].display())
-
-    no = int(input("Enter a No. to be Searched in List"))
-    index = no % 11  # Dividing No by 11 to get proper Index position in slot.
-    flg = slot[index].search(no)  # Searching user entered No at particular index slot
-    if flg is True:
-        print("\nNo", no, "found and Deleted from list\n")
-        slot[index].delete(no)  # If No found then Deleting the no
+    try:
+        fo = open("HashText.txt", "r")
+    except ValueError as e:
+        print(e)
     else:
-        print("\nNo", no, "not found and added to the list\n")
-        slot[index].insert(no)  # If No not found in the list then inserting the no into the list.
-    for i in range(len(slot)):
-        print(i + 1, "}", end=" ")  # for i in slot:
-        print(slot[i].display())
-
-    fo = open("HashText.txt", "w")  # Opening file in Write mode to write nos from list into it
-    for i in range(11):
-        if slot[i] is not None:
-            size = slot[i].slot_size()
-            for j in range(size):
-                fo.write(str(slot[i].pop_head())+' ')  # Write each No from the List into file.
+        arr = fo.read()
+        print(arr)
+        words = arr.split(' ')
+        fo.close()
+        print(words)
+        slot = []
+        for i in range(11):  # Fill each slot with object of class Hash
+            hs = Hash()
+            slot.append(hs)
+        try:
+            for i in range(len(words)):
+                slot[int(words[i]) % 11].insert(int(words[i]))  # Inserting each No. at proper slot with proper index.
+        except ValueError as e:
+            print(e)
         else:
-            pass
-    fo.close()
+            for i in range(len(slot)):  # Loop to display list from each slot.
+                print(i + 1, "}", end=" ")
+                print(slot[i].display())
+            try:
+                no = int(input("Enter a No. to be Searched in List"))
+            except ValueError as e:
+                print(e)
+            else:
+                index = no % 11  # Dividing No by 11 to get proper Index position in slot.
+                flg = slot[index].search(no)  # Searching user entered No at particular index slot
+                if flg is True:
+                    print("\nNo", no, "found and Deleted from list\n")
+                    slot[index].delete(no)  # If No found then Deleting the no
+                else:
+                    print("\nNo", no, "not found and added to the list\n")
+                    slot[index].insert(no)  # If No not found in the list then inserting the no into the list.
+                for i in range(len(slot)):
+                    print(i + 1, "}", end=" ")  # for i in slot:
+                    print(slot[i].display())
+
+                fo = open("HashText.txt", "w")  # Opening file in Write mode to write nos from list into it
+                for i in range(11):
+                    if slot[i] is not None:
+                        size = slot[i].slot_size()
+                        for j in range(size):
+                            fo.write(str(slot[i].pop_head())+' ')  # Write each No from the List into file.
+                    else:
+                        pass
+                fo.close()
 
 
 if __name__ == "__main__":

@@ -1,12 +1,24 @@
+# *********************************************************************************************
+# Purpose: To create a Test program to check Balanced Parenthesis.
+# Author:  Damodhar D. Nirgude.
+# *********************************************************************************************
 
-ll_arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-ll = Hash()
-for i in range(len(ll_arr)):
-    ll = Hash()
-    ll_arr.append(len(ll_arr))
-for i in range(lent + 1):
-    ll_arr[words[i] % 11].insert((words[i]))
-for i in range(len(ll_arr)):
-    print(ll_arr[i].display())
+import unittest
+from Balanced_Paranthesis import balanced
 
-########################################################################
+
+class BalancedPar(unittest.TestCase):
+
+    def testBalanced(self):
+        result = balanced("(5+6)∗(7-3)")
+        expected = True
+        self.assertEqual(result, expected)
+
+    def testNotBalanced(self):
+        result = balanced('(5+6)∗(7-3))')
+        expected = True
+        self.assertNotEqual(result, expected)
+
+
+if __name__ == '__main__':
+    unittest.main()

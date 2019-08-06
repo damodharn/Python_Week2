@@ -2,17 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e412051-2c11-42d6-a566-6c94dba65fab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HashText.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HashText.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Balanced_Paranthesis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Balanced_Paranthesis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinarySearchTrees_No.py" beforeDir="false" afterPath="$PROJECT_DIR$/BinarySearchTrees_No.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/File2.json" beforeDir="false" afterPath="$PROJECT_DIR$/BalaneParSimple.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hash_Search.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hash_Search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEST.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderedNo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OrderedNo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrederedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/OrederedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEST2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnOrdered_List.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnOrdered_List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp2.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="week2" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,7 +39,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../week1/Week1_Functional/StopWatch.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -43,8 +54,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Hash_Search">
-    <configuration name="Anagram_Queue" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.BalaneParSimple">
+    <configuration name="BalaneParSimple" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="week2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -56,7 +67,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anagram_Queue.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BalaneParSimple.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -65,7 +76,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Anagram_Stack" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="BinarySearchTrees_No" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="week2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -77,28 +88,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anagram_Stack.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Calander_2D" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="week2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Calander_2D.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BinarySearchTrees_No.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,7 +118,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Prime_Anagram" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="OrederedList" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="week2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -140,7 +130,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prime_Anagram.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OrederedList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="week2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,13 +162,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.BalaneParSimple" />
+        <item itemvalue="Python.BinarySearchTrees_No" />
         <item itemvalue="Python.Hash_Search" />
-        <item itemvalue="Python.Calander_2D" />
-        <item itemvalue="Python.Anagram_Queue" />
-        <item itemvalue="Python.Anagram_Stack" />
-        <item itemvalue="Python.Prime_Anagram" />
+        <item itemvalue="Python.OrederedList" />
+        <item itemvalue="Python.Test" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS" />
   </component>
   <component name="SvnConfiguration">
     <configuration />

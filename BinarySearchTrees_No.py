@@ -25,11 +25,12 @@ def main():
             in_arr.append(int(input()))  # Add each i/p from user to in_arr list.
     except Exception as e:
         print("Invalid i/p...Enter only Integer values\n", e, "\nTerminating Program...")
-    for i in in_arr:
-        val = BST.bst(i)
-        out_arr.append(val)  # Add each o/p value given by Class method into out_arr list.
-    print("Input:", in_arr)
-    print("Output:", out_arr)
+    else:
+        for i in in_arr:
+            val = BST.bst(i)
+            out_arr.append(val)  # Add each o/p value given by Class method into out_arr list.
+        print("Input:", in_arr)
+        print("Output:", out_arr)
 
 
 if __name__ == '__main__':

@@ -63,13 +63,6 @@ class LinkedList:
             self.head = self.head.next
         return var
 
-    def first(self):
-        var = []
-        while self.head is not None:
-            var.append(self.head.data)  # adding each of the nodes data ie words into list var
-            self.head = self.head.next
-        return var
-
 
 def main():
     fo = open("Unordered.txt", "r")  # Opening txt file in Read mode to read it's data.
@@ -84,7 +77,7 @@ def main():
     ll.search(data)  # Searching the user entered data into the list and then adding/deleting
     # it into/from the list.
     ll.print_list()
-    array1 = ll.first()
+    array1 = ll.pop()
     fo = open("Unordered.txt", "w")  # Opening txt file in Write mode.
     for i in array1:
         fo.write(i + " ")  # writing each word int the file.

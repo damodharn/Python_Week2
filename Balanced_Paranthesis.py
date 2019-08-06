@@ -1,12 +1,10 @@
 # *********************************************************************************************
-# Purpose: To write a program to check if Expression is balanced or not using stack.
+# Purpose: To write a program to check if Expression is balanced or not using Stack created using LinkList.
 # Author: Damodhar D. Nirgude.
 # *********************************************************************************************
 
-#  Class Node : Each node object contain each data element in Stack.
 
-
-class Node:
+class Node:  # Class Node : Each node object contain each data element in Stack.
     def __init__(self, data):
         self.data = data
         self.next = None
@@ -58,13 +56,9 @@ class Stack:
         return cnt  # returning cnt i,e size of List
 
 
-#  *****************************  Queue for Banking  *************************************
-
-
-def main():
+def balanced(exp):
     psh = 0
     pp = 0
-    exp = input("Write ur Expression")
     flag = True
     ll = Stack()
     for i in exp:
@@ -79,9 +73,18 @@ def main():
                 j = ll.pop()  # If closed parenthesis found in expression then pop the stack.
                 pp += 1
     if flag is True and psh == pp:  # If push and pop count found to be equal then
-        print("Balanced Eqn")  # eqn is Balanced else eqn is Unbalanced.
+        return True
     else:
-        print("Unbalanced Eqn")
+        return False
+
+
+def main():
+    exp = input("Write ur Expression")
+    result = balanced(exp)
+    if result is True:
+        print("Balanced Expression.")
+    else:
+        print("Unbalanced Expression.")
 
 
 if __name__ == "__main__":
